@@ -1,0 +1,52 @@
+body{
+    background-color: antiquewhite;
+    align-items: center;
+    padding: 0px 300px;
+}
+
+div{
+    background-color: rgb(31, 209, 149);
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+form{
+    background-color: rgb(159, 255, 188);
+    text-align: center;
+    border: 1px solid black;
+    padding: 0px 20px 9px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.message{
+    margin-right: 114px;
+}
+
+.submit{
+    padding: 3px 190px;
+    text-align: center;
+    text-decoration: 3px solid black;
+    border-radius: 5px;
+    background-color: rgb(31, 209, 149);
+    color: rgb(255, 255, 255);
+}
+
+.reset{
+    padding: 3px 20px;  
+    border-radius: 5px;  
+    color: white;
+    background-color: red;
+}
+
+.submit:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.reset:hover{
+    background-color: aliceblue;
+    color: black;
+}
