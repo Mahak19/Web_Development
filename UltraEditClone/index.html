@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraEdit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* .logo {
+            margin: 10px 20px;
+        } */
+
+        header {
+            display: flex;
+            margin: 30px 0px 0px 30px;    /* tbrl */
+        }
+
+        .nav {
+            margin: 15px 0px 0px 250px;
+        }
+
+        .drop-content a {
+            /* margin: 0px 0px 0px 10px;
+             */
+            text-decoration: none;
+            color: black;
+            background-color: none;
+        }
+
+        .drop {
+            background-color: white;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .drop-content {
+            display: none;
+            position: absolute;
+            margin-top: 25px;
+        }
+
+        .drop-content a {
+            display: block;
+            background-color: rgb(40, 37, 37);
+            color: rgb(255, 255, 255);
+            height: 30px;
+            width: 190px;
+            text-align: left;
+            padding-top: 5px;
+            padding-left: 7px;
+        }
+
+        .dropdown:hover .drop-content {
+            display: block;
+            margin-left: 40px;
+            box-shadow: 5px 5px 10px rgb(139, 137, 137);
+        }
+
+        .drop,
+        a img {
+            margin-left: 30px;
+        }
+
+        main{
+            margin: 70px 0px;
+        }
+
+        .ILine {
+            font-size: 40px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .IILine {
+            font-size: 25px;
+            margin: 20px 130px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .download-mac {
+            padding: 10px;
+            height: 50px;
+            margin: 30px 0px;
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(0, 181, 252);
+            color: white;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .download {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navigation {
+            position: relative;
+            display: inline-block;
+        }
+
+        .logo {
+            margin: 30px 0px 0px 80px;
+        }
+
+        .text {
+            font-size: 30px;
+            margin-top: 40px;
+        }
+
+        .txt{
+            margin: 50px 0px 0px 0px;
+        }
+        
+        ul{
+            list-style: none;
+            display: flex;
+        }
+
+        /* Card design */
+
+        .card{  
+            display: flex;
+            gap: 10px;
+            padding: 5px;
+            justify-content: center;
+        }
+
+        .card-body{
+            background-color: rgb(236, 235, 235);
+            height: 200px;
+            width: 350px;
+        }
+
+        .Heading{
+            font-size: 20px;
+            font-weight: 600;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+
+        .dwn_btn{
+            height: 40px;
+            width: 190px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: rgb(100, 201, 100);
+            color: white;
+            border: none;
+            text-align: center;
+            border-radius: 4px;
+            margin-left: 70px;
+        }
+
+        .codeI{
+            font-size: 15px;
+            text-align: center;
+        }
+        
+        .codeII{
+            font-size: 10px;
+            text-align: center;
+        }
+
+        /* Card Design End */
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <div><img height="60" width="180" src="UE-Logo-1.webp" alt=""></div>
+        </div>
+        <div class="nav">
+            <div class="dropdown">
+                <button class="drop">Produts <img width="10" height="10"
+                        src="https://img.icons8.com/ios/50/down-squared--v2.png" alt="down-squared--v2" /></button>
+            </div>
+            <div class="dropdown">
+                <button class="drop">Our Business <img width="10" height="10"
+                        src="https://img.icons8.com/ios/50/down-squared--v2.png" alt="down-squared--v2" /></button>
+                <div class="drop-content">
+                    <a href="" class="a">Get a Quote</a>
+                    <a href="" class="a">Product Catalog</a>
+                    <a href="" class="a">Licensing FAQ</a>
+                    <a href="" class="a">Security & Compliance</a>
+                    <a href="" class="a">International Distribution</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="drop">Resources <img width="10" height="10"
+                        src="https://img.icons8.com/ios/50/down-squared--v2.png" alt="down-squared--v2" /></button>
+                <div class="drop-content">
+                    <a href="" class="a">Extra Downloads</a>
+                    <a href="" class="a">Academic Licensing</a>
+                    <a href="" class="a">Video Tutorial</a>
+                    <a href="" class="a">Power Link</a>
+                    <a href="" class="a">Blog</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="drop">Support <img width="10" height="10"
+                        src="https://img.icons8.com/ios/50/down-squared--v2.png" alt="down-squared--v2" /></button>
+                <div class="drop-content">
+                    <a href="" class="a">FAQs</a>
+                    <a href="" class="a">User Forum</a>
+                    <a href="" class="a">Support</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="drop">Our Company <img width="10" height="10"
+                        src="https://img.icons8.com/ios/50/down-squared--v2.png" alt="down-squared--v2" /></button>
+                <div class="drop-content">
+                    <a href="" class="a">About Us</a>
+                    <a href="" class="a">Event</a>
+                    <a href="" class="a">Testimonals</a>
+                    <a href="" class="a">Contact Us</a>
+                </div>
+                <a href=""><img width="20" height="20" src="https://img.icons8.com/ios-filled/50/google-translate.png"
+                        alt="google-translate" /></a>
+                <a href=""><img width="20" height="20" src="https://img.icons8.com/windows/32/search--v1.png"
+                        alt="search--v1" /></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <p class="ILine">Download <b>UltraEdit</b> For Windows <img src="Reviews.png" alt=""></p>
+        <p class="IILine">Download and try UltraEdit before you buy it! This download includes the full Windows version of the text editor.</p>
+        <div class="download"><button class="download-mac">Download Mac or Linux Version</button></div>
+        <div class="list">
+            <ul>
+                <li><img height="60" width="60" src="UE.jpg" alt="" class="logo"></li>
+                <li>
+                    <p class="text">&nbsp;Download UltraEdit</p>
+                </li>
+                <li>
+                    <p class="txt">&nbsp;&nbsp;v2024.2 (released 2025-01-15) | Hotfix information </p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Card Design -->
+        <div class="card">
+            <div class="card-body">
+                <p class="Heading">English</p>
+                <button class="dwn_btn">Download 64-bit</button>
+                <p class="codeI">SHA256</p>
+                <p class="codeII">B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515
+                    A9F5FF2CDE19A60EEE36DC702E</p>
+            </div>
+            <div class="card-body">
+                <p class="Heading">English</p>
+                <button class="dwn_btn">Download 64-bit</button>
+                <p class="codeI">SHA256</p>
+                <p class="codeII">B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515
+                    A9F5FF2CDE19A60EEE36DC702E</p>
+            </div>
+            <div class="card-body">
+                <p class="Heading">English</p>
+                <button class="dwn_btn">Download 64-bit</button>
+                <p class="codeI">SHA256</p>
+                <p class="codeII">B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515
+                    A9F5FF2CDE19A60EEE36DC702E</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <p class="Heading">English</p>
+                <button class="dwn_btn">Download 64-bit</button>
+                <p class="codeI">SHA256</p>
+                <p class="codeII">B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515
+                    A9F5FF2CDE19A60EEE36DC702E</p>
+            </div>
+            <div class="card-body">
+                <p class="Heading">English</p>
+                <button class="dwn_btn">Download 64-bit</button>
+                <p class="codeI">SHA256</p>
+                <p class="codeII">B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515
+                    A9F5FF2CDE19A60EEE36DC702E</p>
+            </div>
+            <div class="card-body">
+                <p class="Heading">English</p>
+                <button class="dwn_btn">Download 64-bit</button>
+                <p class="codeI">SHA256</p>
+                <p class="codeII">B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515
+                    A9F5FF2CDE19A60EEE36DC702E</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <p class="Heading">English</p>
+                <button class="dwn_btn">Download 64-bit</button>
+                <p class="codeI">SHA256</p>
+                <p class="codeII">B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515
+                    A9F5FF2CDE19A60EEE36DC702E</p>
+            </div>
+            <div class="card-body">
+                <p class="Heading">English</p>
+                <button class="dwn_btn">Download 64-bit</button>
+                <p class="codeI">SHA256</p>
+                <p class="codeII">B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515
+                    A9F5FF2CDE19A60EEE36DC702E</p>
+            </div>
+            <div class="card-body">
+                <p class="Heading">English</p>
+                <button class="dwn_btn">Download 64-bit</button>
+                <p class="codeI">SHA256</p>
+                <p class="codeII">B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515
+                    A9F5FF2CDE19A60EEE36DC702E</p>
+            </div>
+        </div>
+
+        <!-- Black Down Background -->
+        
+    </main>
+
+</body>
+
+</html>
