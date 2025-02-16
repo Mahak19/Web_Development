@@ -5,6 +5,7 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
         }
 
         .main {
@@ -12,14 +13,14 @@
             background-position: center center;
             background-size: max(1200px, 100vw);
             background-repeat: no-repeat;
-            height: 644px;
+            height: 600px;
             position: relative;
         }
 
         .main .box {
-            height: 644px;
+            height: 600px;
             width: 100%;
-            opacity: 0.8;
+            opacity: 0.67;
             position: absolute;
             top: 0;
             background-color: black;
@@ -133,4 +134,35 @@
             font-weight: bold;
             border: none;
             margin-left: 10px;
+        }
+
+        /* Separater */
+        .separater{
+            height: 5px;
+            position: relative;
+            background-color: rgb(197, 4, 4);
+            border-radius: 60%;
+            box-shadow: 1px 35px 65px 30px rgb(18, 18, 55);
+        }
+
+        @media only screen and (max-width:590px) {
+            .main{
+                display: inline;
+            }
+        }
+
+        /* Trending Section */
+
+        .trending_text{
+            font-size: 30px;
+            margin: 30px 0px;
+        }
+
+        .trending_Images{
+            display: flex;
+            gap: 60px;
+        }
+
+        .trending_Images div img{
+            border-radius: 15px;
         }
