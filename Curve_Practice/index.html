@@ -1,19 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<!-- <!DOCTYPE html>
+<html>
 <body>
-    <script>
-        const canvas = document.getElementById("myCanvas");
-        const ctx = canvas.getContext("2d");
-        
-        ctx.beginPath();
-        ctx.moveTo(10, 100);
-        ctx.quadraticCurveTo(250, 170, 230, 20);
-        ctx.stroke();
-        </script>
+
+<canvas id="Canvas" style="border:1px solid #000000;"></canvas>
+
+<script>
+const canvas = document.getElementById("Canvas");
+const ctx = canvas.getContext("2d");
+
+ctx.beginPath();
+ctx.moveTo(10, 100);
+ctx.quadraticCurveTo(250, 170, 230, 20);
+ctx.stroke();
+</script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="Canvas" style="border:2px solid #000000;"></canvas>
+
+<script>
+const canvas = document.getElementById("Canvas");
+const ctx = canvas.getContext("2d");
+
+ctx.beginPath();
+ctx.moveTo(50, 50);
+ctx.bezierCurveTo(110, 30, 180, 0, 210, 140);
+ctx.stroke();
+</script>
+
 </body>
 </html>
